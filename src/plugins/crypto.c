@@ -1480,7 +1480,6 @@ gboolean bd_crypto_luks_remove_key (const gchar *device, BDCryptoKeyslotContext 
         return FALSE;
     }
 
-    crypt_safe_free (key_buf);
     crypt_free (cd);
     bd_utils_report_finished (progress_id, "Completed");
     return TRUE;
